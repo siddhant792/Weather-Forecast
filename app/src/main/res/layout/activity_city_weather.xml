@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:ellipsize="end"
+            android:id="@+id/tv_day"
+            android:fontFamily="@font/noto_sans"
+            android:maxLines="1"
+            android:text="Sat, Aug 29th 2020"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="23"
+                android:id="@+id/tv_temp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_toRightOf="@+id/tv_temp"
+                android:fontFamily="@font/noto_sans"
+                android:id="@+id/tv_unit"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="°C"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:fontFamily="@font/noto_sans"
+            android:maxLines="1"
+            android:id="@+id/tv_city"
+            android:text="New Delhi"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:text="Other Details :-"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/noto_sans"
+            android:visibility="gone"
+            android:id="@+id/tv_min_temp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:text="Minimum Temperature :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:id="@+id/tv_max_temp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:text="Maximum Temperature :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_pressure"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:text="Pressure :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:id="@+id/tv_humidity"
+            android:text="Humidity :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:id="@+id/tv_wind"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:text="Wind :"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/progress_circular"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
